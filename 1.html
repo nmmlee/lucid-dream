@@ -3,6 +3,7 @@
 <head>
   <title>lucid dream - html</title>
   <meta charset="utf-8">
+  <meta name = "viewport" content="width=device-width", initial-scale=1.0>
   <style>
   body{
     margin:0;
@@ -20,13 +21,13 @@
   }
   ol{
     border-right:1px solid black;
-    width:100px;
+    width:70px;
     margin:0;
-    padding: 20px;
+    padding:0px;
   }
   #grid{
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 100px 1fr;
   }
   #article{
     padding: 10px;
@@ -34,16 +35,7 @@
   #grid ol{
     padding-left: 25px;
   }
-  @media(max-width:500px){
-    #grid{
-      display: block
-    }
-    ol{
-      border-right:none;
-    }
-    h1{
-      border-bottom: none;
-    }
+
   }
   </style>
 </head>
@@ -72,6 +64,16 @@
 </html>
 <!--id 선택자>>class (.)선택자>>태그선택자 순서
 id는 한번만 사용가능하다.(active는 한번만 등장)
-
+@media(max-width:500px){
+  #grid{
+    display: block
+  }
+  ol{
+    border-right:none;
+  }
+  h1{
+    border-bottom: none;
+  }
+크기에 따라서 작대기 없애는것
 css selector
 css text property
